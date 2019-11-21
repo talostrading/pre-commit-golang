@@ -1,2 +1,2 @@
 #!/bin/sh
-exec golangci-lint run "$@"
+exec golangci-lint -j4 --fast run "$@"
