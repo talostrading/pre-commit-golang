@@ -1,2 +1,3 @@
 #!/bin/sh
-cd gocode && exec golangci-lint -j4 --fast run "$@"
+set -x
+cd gocode && exec golangci-lint -j4 run --fast
